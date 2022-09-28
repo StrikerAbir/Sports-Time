@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Side.css";
 import pic from "../../images/pic5.png";
+import BreakTime from "../BreakTime/BreakTime";
 
 const Side = ({ adds }) => {
-  const timeTotal = adds.reduce((prev, cur) => prev + cur.time, 0);
-  console.log(timeTotal);
+    const timeTotal = adds.reduce((prev, cur) => prev + cur.time, 0);
+    const array = [
+      { id: 1, min: 20 },
+      { id: 2, min: 30 },
+      { id: 3, min: 40 },
+      { id: 4, min: 50 },
+    ];
+    const [ breakT, setBreakT ] = useState(0);
+    
+  const handleBreakTime = (min) => {
+      setBreakT(0);
+      setBreakT(min);
+  };
   return (
     <div className="side-body">
       {/* my info */}
@@ -35,26 +47,13 @@ const Side = ({ adds }) => {
       <div className="bt-container">
         <h2>Break Time</h2>
         <div className="break-time">
-          <div>
-            <p>
-              20<small>min</small>
-            </p>
-          </div>
-          <div>
-            <p>
-              30<small>min</small>
-            </p>
-          </div>
-          <div>
-            <p>
-              40<small>min</small>
-            </p>
-          </div>
-          <div>
-            <p>
-              50<small>min</small>
-            </p>
-          </div>
+          {array.map((min) => (
+            <BreakTime
+              handleBreakTime={handleBreakTime}
+                  minutes={min}
+                  key={min.id}
+            ></BreakTime>
+          ))}
         </div>
       </div>
 
@@ -70,7 +69,7 @@ const Side = ({ adds }) => {
         <div className="times">
           <p>Break Time</p>
           <p>
-            <span>30min</span>
+                      <span>{breakT }min</span>
           </p>
         </div>
       </div>
