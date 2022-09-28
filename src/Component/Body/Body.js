@@ -1,19 +1,31 @@
-import React from 'react';
-import Header from '../Header/Header';
-import Side from '../Side/Side';
-import './Body.css'
+import React, { useEffect, useState } from "react";
+import Card from "../Card/Card";
+import Header from "../Header/Header";
+import Side from "../Side/Side";
+import "./Body.css";
 
 const Body = () => {
-    return (
-      <div className="body-container">
+  const [sports, setSports] = useState([]);
+  useEffect(() => {
+    fetch("info.json")
+      .then((res) => res.json())
+      .then((data) => setSports(data));
+  }, []);
+  return (
+    <div className="body-container">
+      <div>
+        <Header></Header>
         <div className="sports-container">
-          <Header></Header>
-        </div>
-        <div className='side-container'>
-            <Side></Side>
+          {sports.map((sport) => (
+            <Card sport={sport} key={sport.idSport}></Card>
+          ))}
         </div>
       </div>
-    );
+      <div className="side-container">
+        <Side></Side>
+      </div>
+    </div>
+  );
 };
 
 export default Body;
