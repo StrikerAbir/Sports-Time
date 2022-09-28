@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Blog from "../BLog/Blog";
 import Card from "../Card/Card";
 import Header from "../Header/Header";
 import Side from "../Side/Side";
@@ -23,7 +24,7 @@ const Body = () => {
       </div>
       <div className="side-container">
         <Side></Side>
-      </div>
+          </div>
     </div>
   );
 };
