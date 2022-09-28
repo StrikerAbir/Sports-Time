@@ -13,7 +13,7 @@ const Body = () => {
   }, []);
   return (
     <div className="body-container">
-      <div>
+      <div className='head-sports'>
         <Header></Header>
         <div className="sports-container">
           {sports.map((sport) => (
