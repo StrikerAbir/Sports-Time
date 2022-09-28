@@ -8,9 +8,10 @@
     position:relative;
 }
 .card-container img{
+    box-sizing: border-box;
     width: 100%;
     border-radius:8px;
-    border:1px solid #e0e6a1;
+    border:2px solid #e0e6a1;
 }
 .info{
     padding:0 10px;
@@ -34,7 +35,7 @@
     left: 9%;
 }
 .btn:hover{
-    background-color: #3a4126;
+    background-color: #8f8a63;
     color:#e0e6a1;
     border: 2px solid #e0e6a1
 }

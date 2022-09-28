@@ -9,7 +9,7 @@ const Card = ({ sport }) => {
       <div className='info'>
         <div className="align">
           <h3>{strSport}</h3>
-          <p>Time : {time}hr</p>
+          <p>Full Time : {time}hr</p>
         </div>
         <p className="format">
           <small>Format : {strFormat}</small>
