@@ -1,11 +1,11 @@
 .body-container{
     background-color: #e0e6a1;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 75% 25%;
 }
 .sports-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 30px;
-    padding: 0 100px;
+    gap: 35px;
+    margin: 0 60px;
 }

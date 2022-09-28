@@ -6,17 +6,19 @@ const Card = ({ sport }) => {
   return (
     <div className="card-container">
       <img src={strSportThumb} alt="" />
-      <div className='align'>
-        <h3>{strSport}</h3>
-        <p>Time : {time}hr</p>
+      <div className='info'>
+        <div className="align">
+          <h3>{strSport}</h3>
+          <p>Time : {time}hr</p>
+        </div>
+        <p className="format">
+          <small>Format : {strFormat}</small>
+        </p>
+        <p>{strSportDescription}</p>
+        <button className="btn">
+          <p>Add To List</p>
+        </button>
       </div>
-      <p>
-        <small>Format : {strFormat}</small>
-      </p>
-      <p>{strSportDescription}</p>
-      <button className='btn'>
-        <p>Add To List</p>
-      </button>
     </div>
   );
 };
