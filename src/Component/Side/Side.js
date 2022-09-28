@@ -2,9 +2,12 @@ import React from "react";
 import "./Side.css";
 import pic from "../../images/pic5.png";
 
-const Side = () => {
+const Side = ({ adds }) => {
+  const timeTotal = adds.reduce((prev, cur) => prev + cur.time, 0);
+  console.log(timeTotal);
   return (
     <div className="side-body">
+      {/* my info */}
       <div className="side-header">
         <img src={pic} alt="" />
         <h2>Abir Hasan</h2>
@@ -27,6 +30,8 @@ const Side = () => {
           <p>Weight</p>
         </div>
       </div>
+
+      {/* break time part */}
       <div className="bt-container">
         <h2>Break Time</h2>
         <div className="break-time">
@@ -52,12 +57,14 @@ const Side = () => {
           </div>
         </div>
       </div>
+
+      {/* Detais part */}
       <div className="details">
         <h2>Sports Time Details</h2>
         <div className="times">
           <p>Sports Time</p>
           <p>
-            <span>200hr</span>
+            <span>{timeTotal}hr</span>
           </p>
         </div>
         <div className="times">
@@ -66,10 +73,10 @@ const Side = () => {
             <span>30min</span>
           </p>
         </div>
-          </div>
-          <button className='activity-btn'>
-             <p>Activity Complete</p>
-          </button>
+      </div>
+      <button className="activity-btn">
+        <p>Activity Complete</p>
+      </button>
     </div>
   );
 };

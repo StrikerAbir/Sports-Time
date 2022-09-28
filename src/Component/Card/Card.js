@@ -1,6 +1,6 @@
 import React from "react";
 import "./Card.css";
-const Card = ({ sport }) => {
+const Card = ({ sport,clickHandler }) => {
   const { strSport, strFormat, strSportThumb, strSportDescription, time } =
     sport;
   return (
@@ -15,7 +15,7 @@ const Card = ({ sport }) => {
           <small>Format : {strFormat}</small>
         </p>
         <p>{strSportDescription}</p>
-        <button className="btn">
+        <button className="btn" onClick={()=>clickHandler(sport)}>
           <p>Add To List</p>
         </button>
       </div>

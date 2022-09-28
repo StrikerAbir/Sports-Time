@@ -12,7 +12,7 @@
     "idSport": 103,
     "strSport": "Motorsport",
     "strFormat": "EventSport",
-    "time": 1,
+    "time": 0.75,
     "strSportThumb": "https://www.thesportsdb.com/images/sports/motorsport.jpg",
     "strSportIconGreen": "https://www.thesportsdb.com/images/icons/sports/motorsport.png",
     "strSportDescription": "Motorsport or motor sport is a global term used to encompass the group of competitive sporting events which primarily involve the use of motorised vehicles."
