@@ -52,6 +52,24 @@ const Side = () => {
           </div>
         </div>
       </div>
+      <div className="details">
+        <h2>Sports Time Details</h2>
+        <div className="times">
+          <p>Sports Time</p>
+          <p>
+            <span>200hr</span>
+          </p>
+        </div>
+        <div className="times">
+          <p>Break Time</p>
+          <p>
+            <span>30min</span>
+          </p>
+        </div>
+          </div>
+          <button className='activity-btn'>
+             <p>Activity Complete</p>
+          </button>
     </div>
   );
 };

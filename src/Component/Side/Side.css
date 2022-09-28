@@ -58,3 +58,35 @@
     color: #e0e6a1;
     border:2px solid #8f8a63;
 }
+
+.details{
+    margin-top: 50px;
+}
+.times{
+    background-color: #e0e6a1;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    color: #383f15;
+    font-weight: 500;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+.times span{
+    color: #8f8a63;
+}
+
+.activity-btn{
+    margin-top:40px;
+    background-color: #e0e6a1;
+    color: #383f15;
+    font-weight: 700;
+    border-radius:8px;
+    width: 100%;
+    letter-spacing: 1.5px;
+}
+.activity-btn:hover{
+    border: 2px solid #e0e6a1;
+    background-color: #8f8a63;
+    color: #e0e6a1;
+}
