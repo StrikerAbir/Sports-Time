@@ -1,0 +1,16 @@
+.side-body{
+    margin-top: 40px;
+}
+.side-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.side-header img{
+    height: 60px;
+    width: 60px;
+    background-color: #e0e6a1;
+    border-radius:50%;
+    margin-right: 20px;
+}
