@@ -21,7 +21,11 @@ const Side = ({ adds }) => {
   ];
   const [breakT, setBreakT] = useState(0);
   useEffect(() => {
-    const data = getStoredData("break");
+     
+     const data = localStorage.getItem('break')||0;
+     
+    // const data = getStoredData("break");
+    // const data = JSON.parse(storedata);
     setBreakT(data);
   }, []);
 
