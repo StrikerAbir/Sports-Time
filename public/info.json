@@ -11,7 +11,7 @@
   {
     "idSport": 103,
     "strSport": "Motorsport",
-    "strFormat": "EventSport",
+    "strFormat": "Event Sport",
     "time": 0.75,
     "strSportThumb": "https://www.thesportsdb.com/images/sports/motorsport.jpg",
     "strSportIconGreen": "https://www.thesportsdb.com/images/icons/sports/motorsport.png",
@@ -20,7 +20,7 @@
   {
     "idSport": 104,
     "strSport": "Fighting",
-    "strFormat": "EventSport",
+    "strFormat": "Event Sport",
     "time": 0.5,
     "strSportThumb": "https://www.thesportsdb.com/images/sports/fighting.jpg",
     "strSportIconGreen": "https://www.thesportsdb.com/images/icons/sports/fighting.png",
@@ -47,7 +47,7 @@
   {
     "idSport": 113,
     "strSport": "Cycling",
-    "strFormat": "EventSport",
+    "strFormat": "Event Sport",
     "time": 1,
     "strSportThumb": "https://www.thesportsdb.com/images/sports/cycling.jpg",
     "strSportIconGreen": "https://www.thesportsdb.com/images/icons/sports/cycling.png",
@@ -56,7 +56,7 @@
   {
     "idSport": 108,
     "strSport": "Ice Hockey",
-    "strFormat": "TeamvsTeam",
+    "strFormat": "Team vs Team",
     "time": 1,
     "strSportThumb": "https://www.thesportsdb.com/images/sports/ice_hockey.jpg",
     "strSportIconGreen": "https://www.thesportsdb.com/images/icons/sports/icehockey.png",

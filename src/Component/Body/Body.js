@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { addToDB } from "../../utitlites/localStorage";
 import Card from "../Card/Card";
 import Header from "../Header/Header";
 import Side from "../Side/Side";
@@ -16,6 +17,7 @@ const Body = () => {
     const clickHandler = (addedSport) => {
         let newAdd = [...adds, addedSport];
         setAdds(newAdd);
+        addToDB(addedSport);
 }
     
   return (
