@@ -15,17 +15,17 @@ const Body = () => {
   }, []);
     
     useEffect(() => {
-        const storedData = getStoredData('sports');
-        const savedSports = [];
-        for (const id in storedData) {
-            const addedSport = sports.find(sport => sport.idSport === id);
-            if (addedSport) {
-                addedSport.clickTimes = storedData[id];
-                savedSports.push(addedSport);
-            }      
+      const storedData = getStoredData("sports");
+      const savedSports = [];
+      for (const id in storedData) {
+        const addedSport = sports.find((sport) => sport.idSport === id);
+        if (addedSport) {
+          addedSport.clickTimes = storedData[id];
+          savedSports.push(addedSport);
         }
-        setAdds(savedSports);
-    },[sports])
+      }
+      setAdds(savedSports);
+    }, [sports]);
     const clickHandler = (addedSport) => {
         let newAdd = [];
         
