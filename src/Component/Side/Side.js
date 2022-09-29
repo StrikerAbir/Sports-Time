@@ -9,7 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 
 const Side = ({ adds }) => {
-  console.log(adds);
   const timeTotal = adds.reduce(
     (prev, cur) => prev + parseFloat(cur.time) * cur.clickTimes,
     0
