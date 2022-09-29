@@ -1,6 +1,7 @@
 import Blog from "./Component/BLog/Blog";
 import Body from "./Component/Body/Body";
 import "./App.css";
+
 function App() {
   return (
     <div className="App">

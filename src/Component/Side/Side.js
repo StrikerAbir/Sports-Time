@@ -3,7 +3,8 @@ import "./Side.css";
 import pic from "../../images/pic5.png";
 import BreakTime from "../BreakTime/BreakTime";
 import { addBreakToDb, getStoredData } from "../../utitlites/localStorage";
-
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Side = ({ adds }) => {
   console.log(adds);
   const timeTotal = adds.reduce(
@@ -26,6 +27,10 @@ const Side = ({ adds }) => {
     setBreakT(min);
     addBreakToDb(min);
   };
+
+    const notify = () => {
+        toast("Mission Accomplished")
+    }
   return (
     <div className="side-body">
       {/* my info */}
@@ -82,9 +87,12 @@ const Side = ({ adds }) => {
           </p>
         </div>
       </div>
-      <button className="activity-btn">
-        <p>Activity Complete</p>
-      </button>
+          <div>
+              <ToastContainer></ToastContainer>
+        <button className="activity-btn" onClick={notify}>
+          <p>Activity Complete</p>
+        </button>
+      </div>
     </div>
   );
 };
