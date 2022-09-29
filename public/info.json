@@ -1,6 +1,7 @@
 [
   {
-    "idSport": 102,
+    "clickTimes":0,
+    "idSport": "102",
     "strSport": "Soccer",
     "strFormat": "Team vs Team",
     "time": 1,
@@ -9,7 +10,8 @@
     "strSportDescription": "Association football, more commonly known as football or soccer, is a team sport played between two teams of eleven players with a spherical ball. It is played by 250 million players in over 200 countries and dependencies, making it the world's most popular sport."
   },
   {
-    "idSport": 103,
+    "clickTimes":0,
+    "idSport": "103",
     "strSport": "Motorsport",
     "strFormat": "Event Sport",
     "time": 0.75,
@@ -18,7 +20,8 @@
     "strSportDescription": "Motorsport or motor sport is a global term used to encompass the group of competitive sporting events which primarily involve the use of motorised vehicles."
   },
   {
-    "idSport": 104,
+    "clickTimes":0,
+    "idSport": "104",
     "strSport": "Fighting",
     "strFormat": "Event Sport",
     "time": 0.5,
@@ -27,7 +30,8 @@
     "strSportDescription": "Combat (French for fight) is a purposeful violent conflict meant to weaken, establish dominance over, or kill the opposition, or to drive the opposition away from a location where it is not wanted or needed."
   },
   {
-    "idSport": 105,
+    "clickTimes":0,
+    "idSport": "105",
     "strSport": "Baseball",
     "strFormat": "Team vs Team",
     "time": 3,
@@ -36,7 +40,8 @@
     "strSportDescription": "Baseball is a bat-and-ball game played between two teams of nine players each who take turns batting and fielding. "
   },
   {
-    "idSport": 106,
+    "clickTimes":0,
+    "idSport": "106",
     "strSport": "Basketball",
     "strFormat": "Team vs Team",
     "time": 1.5,
@@ -45,7 +50,8 @@
     "strSportDescription": "Basketball is a limited-contact sport played on a rectangular court. While most often played as a team sport with five players on each side, three-on-three, two-on-two, and one-on-one competitions are also common."
   },
   {
-    "idSport": 113,
+    "clickTimes":0,
+    "idSport": "113",
     "strSport": "Cycling",
     "strFormat": "Event Sport",
     "time": 1,
@@ -54,7 +60,8 @@
     "strSportDescription": "Cycling, also called bicycling or biking, is the use of bicycles for transport, recreation, exercise or sport."
   },
   {
-    "idSport": 108,
+    "clickTimes":0,
+    "idSport": "108",
     "strSport": "Ice Hockey",
     "strFormat": "Team vs Team",
     "time": 1,

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { addToDB } from "../../utitlites/localStorage";
+import { addToDB, getStoredData } from "../../utitlites/localStorage";
 import Card from "../Card/Card";
 import Header from "../Header/Header";
 import Side from "../Side/Side";
@@ -14,10 +14,34 @@ const Body = () => {
       .then((data) => setSports(data));
   }, []);
     
+    useEffect(() => {
+        const storedData = getStoredData();
+        const savedSports = [];
+        for (const id in storedData) {
+            const addedSport = sports.find(sport => sport.idSport === id);
+            if (addedSport) {
+                addedSport.clickTimes = storedData[id];
+                savedSports.push(addedSport);
+            }      
+        }
+        setAdds(savedSports);
+    },[sports])
     const clickHandler = (addedSport) => {
-        let newAdd = [...adds, addedSport];
+        let newAdd = [];
+        
+        const exist = adds.find((sport) => sport.idSport === addedSport.idSport);
+        if (!exist) {
+          addedSport.clickTimes = 1;
+          newAdd = [...adds, addedSport];
+        } else {
+          const rest = adds.filter(
+            (sport) => sport.idSport !== addedSport.idSport
+          );
+          exist.clickTimes += 1;
+          newAdd = [...rest, exist];
+        }
         setAdds(newAdd);
-        addToDB(addedSport);
+        addToDB(addedSport.idSport);
 }
     
   return (

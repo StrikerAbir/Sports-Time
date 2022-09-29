@@ -7,16 +7,16 @@ const getStoredData = () => {
     return data;
 }
 
-const addToDB = ({ time, idSport }) => {
+const addToDB = (idSport) => {
     const data = getStoredData();
-    const times = data[idSport];
-    console.log(times);
-    if (times) {
-        data[idSport] += data[idSport];
+    const clickTimes = data[idSport];
+    
+    if (clickTimes) {
+        data[idSport] += 1;
     } else {
-        data[idSport] = time;
+        data[idSport] = 1;
     }
     localStorage.setItem('sports', JSON.stringify(data))
 }
 
-export { addToDB };
+export { addToDB,getStoredData };
