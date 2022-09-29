@@ -65,15 +65,17 @@
 .times{
     background-color: #e0e6a1;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
     color: #383f15;
     font-weight: 500;
     margin-bottom: 30px;
     border-radius: 8px;
+    padding: 0 30px;
 }
 .times span{
     color: #8f8a63;
+    margin-left: 10px;
 }
 
 .activity-btn{

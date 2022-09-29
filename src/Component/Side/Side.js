@@ -6,7 +6,7 @@ import { addBreakToDb, getStoredData } from "../../utitlites/localStorage";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock} from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
 
 const Side = ({ adds }) => {
   console.log(adds);
@@ -31,9 +31,9 @@ const Side = ({ adds }) => {
     addBreakToDb(min);
   };
 
-    const notify = () => {
-        toast("Mission Accomplished")
-    }
+  const notify = () => {
+    toast("Mission Accomplished");
+  };
   return (
     <div className="side-body">
       {/* my info */}
@@ -79,16 +79,21 @@ const Side = ({ adds }) => {
         <h2>Sports Time Details</h2>
         <div className="times">
           <p>Sports Time</p>
-          <FontAwesomeIcon icon={faClock}></FontAwesomeIcon>
+
           <p>
             <span>{timeTotal}hr</span>
+            <span>
+              <FontAwesomeIcon icon={faClock}></FontAwesomeIcon>
+            </span>
           </p>
         </div>
         <div className="times">
           <p>Break Time</p>
-          <FontAwesomeIcon icon={faClock}></FontAwesomeIcon>
           <p>
             <span>{breakT}min</span>
+            <span>
+              <FontAwesomeIcon icon={faClock}></FontAwesomeIcon>
+            </span>
           </p>
         </div>
       </div>
