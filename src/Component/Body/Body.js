@@ -15,7 +15,7 @@ const Body = () => {
   }, []);
     
     useEffect(() => {
-        const storedData = getStoredData();
+        const storedData = getStoredData('sports');
         const savedSports = [];
         for (const id in storedData) {
             const addedSport = sports.find(sport => sport.idSport === id);

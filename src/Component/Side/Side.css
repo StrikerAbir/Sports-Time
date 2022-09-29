@@ -40,7 +40,7 @@
     background-color: #e0e6a1;
     border-radius: 8px;
 }
-.break-time div{
+.break-time button{
     margin:10px 0;
     height:50px;
     width:50px;
@@ -53,7 +53,7 @@
     justify-content: center;
     font-weight: 500;
 }
-.break-time div:hover{
+.break-time button:hover{
       background-color: #383f15;
     color: #e0e6a1;
     border:2px solid #8f8a63;

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Side.css";
 import pic from "../../images/pic5.png";
 import BreakTime from "../BreakTime/BreakTime";
+import { addBreakToDb, getStoredData } from "../../utitlites/localStorage";
 
 const Side = ({ adds }) => {
   console.log(adds);
@@ -16,10 +17,14 @@ const Side = ({ adds }) => {
     { id: 4, min: 50 },
   ];
   const [breakT, setBreakT] = useState(0);
+  useEffect(() => {
+    const data = getStoredData("break");
+    setBreakT(data);
+  }, []);
 
   const handleBreakTime = (min) => {
-    setBreakT(0);
     setBreakT(min);
+    addBreakToDb(min);
   };
   return (
     <div className="side-body">

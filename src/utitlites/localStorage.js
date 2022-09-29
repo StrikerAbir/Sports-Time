@@ -1,6 +1,6 @@
-const getStoredData = () => {
+const getStoredData = (localKey) => {
     let data = {};
-    const storedData = localStorage.getItem('sports');
+    const storedData = localStorage.getItem(localKey);
     if (storedData) {
         data=JSON.parse(storedData);
     }
@@ -8,7 +8,7 @@ const getStoredData = () => {
 }
 
 const addToDB = (idSport) => {
-    const data = getStoredData();
+    const data = getStoredData('sports');
     const clickTimes = data[idSport];
     
     if (clickTimes) {
@@ -19,4 +19,8 @@ const addToDB = (idSport) => {
     localStorage.setItem('sports', JSON.stringify(data))
 }
 
-export { addToDB,getStoredData };
+const addBreakToDb = (min) => {
+    localStorage.setItem('break', JSON.stringify(min))
+}
+
+export { addToDB,getStoredData,addBreakToDb };
