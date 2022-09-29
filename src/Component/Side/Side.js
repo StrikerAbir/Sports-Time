@@ -5,6 +5,9 @@ import BreakTime from "../BreakTime/BreakTime";
 import { addBreakToDb, getStoredData } from "../../utitlites/localStorage";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClock} from "@fortawesome/free-solid-svg-icons";
+
 const Side = ({ adds }) => {
   console.log(adds);
   const timeTotal = adds.reduce(
@@ -76,19 +79,21 @@ const Side = ({ adds }) => {
         <h2>Sports Time Details</h2>
         <div className="times">
           <p>Sports Time</p>
+          <FontAwesomeIcon icon={faClock}></FontAwesomeIcon>
           <p>
             <span>{timeTotal}hr</span>
           </p>
         </div>
         <div className="times">
           <p>Break Time</p>
+          <FontAwesomeIcon icon={faClock}></FontAwesomeIcon>
           <p>
             <span>{breakT}min</span>
           </p>
         </div>
       </div>
-          <div>
-              <ToastContainer></ToastContainer>
+      <div>
+        <ToastContainer></ToastContainer>
         <button className="activity-btn" onClick={notify}>
           <p>Activity Complete</p>
         </button>
